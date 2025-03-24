@@ -15,7 +15,7 @@ try
     // Building the service provider for execution
     var provider = services.BuildServiceProvider();
 
-    // Resolving and running the app
+    // Running the app
     var app = provider.GetRequiredService<App>();
     await app.RunAsync();
 }
